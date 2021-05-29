@@ -67,6 +67,22 @@ app.get('/posts/:postName', function(req, res) {
 
 });
 
+app.post('/search', function(req, res) {
+
+    const requiredPost = _.lowerCase(req.body.search);
+
+    for (let i = 0; i < posts.length; i++) {
+        const postTitle = _.lowerCase(posts[i].title);
+        if (postTitle === requiredPost) {
+            flag = true;
+
+            res.render('post', { post: posts[i] });
+
+            break;
+        }
+    }
+});
+
 app.listen(process.env.PORT || port, function() {
     console.log(`Example app listening at http://localhost:${port}`);
 });

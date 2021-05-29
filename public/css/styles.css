@@ -1,10 +1,14 @@
+body {
+    height: 100vh;
+}
+
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
 }
 
 .navbar {
-    padding: 40px 0px 10px;
+    padding: 40px 20px 10px;
     margin-bottom: 50px;
     font-size: 15px;
     letter-spacing: 5px;
@@ -22,27 +26,48 @@
     padding-left: 20px;
 }
 
+h1 {
+    color: #1abc9c;
+}
+
+.create {
+    margin: 40px auto;
+}
+
+.search {
+    margin-bottom: 40px;
+}
+
+.compose {
+    margin-top: 40px;
+}
+
+.btn {
+    background-color: #1abc9c !important;
+    border-color: #1abc9c !important;
+}
+
+.btn:hover {
+    background-color: #1abc9c86 !important;
+    border-color: #1abc9c86 !important;
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 .2rem #1abc9c50 !important;
+}
+
 textarea {
     resize: none;
 }
 
-.footer-padding {
-    padding-bottom: 60px;
-}
-
 .footer {
-    position: absolute;
-    text-align: center;
-    bottom: 0;
+    margin-top: 75px;
+    padding: 20px;
+    font-size: 15px;
     width: 100%;
-    height: 60px;
     background-color: #1abc9c;
-}
-
-.footer p {
-    margin-top: 25px;
-    font-size: 12px;
-    color: #fff;
+    color: white;
+    margin-bottom: 0;
 }
 
 .footer p i {
